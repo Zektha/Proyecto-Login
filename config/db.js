@@ -14,5 +14,6 @@ db.connect(err => {
     }
     console.log('Conectado a MySQL');
 });
-
+console.log(process.env.DB_USER);
+console.log(process.env.DB_PASSWORD);
 module.exports = db;
