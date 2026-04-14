@@ -1,0 +1,29 @@
+{
+  "name": "login_project",
+  "version": "1.0.0",
+  "description": "*Librerias que se han utilizado para este proyecto:\r mysql2\r express\r bcrypt\r ejs\r express-session\r dotenv",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zektha/Proyecto-Login.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Zektha/Proyecto-Login/issues"
+  },
+  "homepage": "https://github.com/Zektha/Proyecto-Login#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.4.2",
+    "ejs": "^5.0.2",
+    "express": "^5.2.1",
+    "express-session": "^1.19.0",
+    "mysql2": "^3.22.0"
+  }
+}
