@@ -1,0 +1,6 @@
+mysql2
+express
+bcrypt
+ejs
+express-session
+dotenv

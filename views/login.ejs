@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="/estilo.css">
+</head>
+<body>
+<div class="container">
+<h1>Login</h1>
+<% if (error === 'usuario') { %>
+    <p style="color:red;">Usuario no encontrado</p>
+<% } %>
+
+<% if (error === 'password') { %>
+    <p style="color:red;">Contraseña incorrecta</p>
+<% } %>
+
+<form action="/login" method="POST">
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="password" name="password" placeholder="Contraseña" required>
+    <br>
+    <button type="submit">Iniciar sesión</button>
+</form>
+</div>
+</body>
+</html>
