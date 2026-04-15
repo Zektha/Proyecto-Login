@@ -15,8 +15,8 @@ exports.registrarUsuario = async (req, res) => {
 
         db.query(sql, [nombre, email, hashedPassword], (err) => {
             if (err) {
-                console.error(err);
-                return res.send('Error al registrar');
+                console.error('Error en BD:', err.message);
+                return res.send('Error al registrar: ' + err.message);
             }
 
             return res.redirect('/login');
@@ -24,8 +24,8 @@ exports.registrarUsuario = async (req, res) => {
 
     
     } catch (error) {
-        console.error(error);
-        res.send('Error interno');
+        console.error('Error:', error.message);
+        res.send('Error interno: ' + error.message);
     }
 };
 
