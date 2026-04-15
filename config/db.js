@@ -9,12 +9,5 @@ const db = mysql.createPool({
     database: process.env.DB_NAME
 });
 
-db.connect(err => {
-    if (err) {
-        console.error('Error de conexión:', err);
-        return;
-    }
-    console.log('Conectado a Railway 🚀');
-});
 
 module.exports = db;
